@@ -1,0 +1,30 @@
+{
+  "name": "diginet",
+  "version": "0.1.0",
+  "description": "Classify handwritten digits",
+  "bin": {
+    "diginet": "lib/cli.js"
+  },
+  "main": "lib/index.js",
+  "scripts": {
+    "lint": "eslint lib/*.js test/*.js",
+    "pretest": "npm run lint",
+    "test": "tape test/*.test.js"
+  },
+  "keywords": [
+    "generator-npm-pasta"
+  ],
+  "author": "rodowi",
+  "license": "ISC",
+  "repository": "rodowi/diginet",
+  "devDependencies": {
+    "eslint": "^3.7.1",
+    "eslint-config-standard": "^6.2.0",
+    "eslint-plugin-promise": "^3.0.0",
+    "eslint-plugin-standard": "^2.0.1",
+    "tape": "^4.6.2"
+  },
+  "dependencies": {
+    "minimist": "^1.2.0"
+  }
+}

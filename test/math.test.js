@@ -16,6 +16,7 @@ test('[math] sigmoid', function (t) {
   var g = math.sigmoid(z)
 
   t.deepEqual(trim(g, 5), r, 'octave:1> 1.0 ./ (1.0 + exp(-z))')
+  t.equal(math.sigmoid(1).toFixed(2), '0.73', 'works for scalar values too')
   t.end()
 })
 

@@ -1,6 +1,7 @@
 var math = require('../lib/math')
 var nnet = require('../lib/neuronas')
 var test = require('tape')
+var v = require('vectorious')
 
 var X
 var L
@@ -23,7 +24,7 @@ test('[neuronas] forward propagation for XNOR', function (t) {
     [+10, -20, -20]
   ]
   var Theta2 = [ [-10, 20, 20] ]
-  var Theta = [Theta1, Theta2]
+  var Theta = [ v.Matrix(Theta1), v.Matrix(Theta2) ]
   var hx = 1337
 
   hx = nnet.forwardPropagation(L, Theta, X[0])

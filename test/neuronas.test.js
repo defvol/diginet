@@ -22,7 +22,7 @@ test('[neuronas] forward propagation for XNOR', function (t) {
     [-30, +20, +20],
     [+10, -20, -20]
   ]
-  var Theta2 = [-10, 20, 20]
+  var Theta2 = [ [-10, 20, 20] ]
   var Theta = [Theta1, Theta2]
   var hx = 1337
 
